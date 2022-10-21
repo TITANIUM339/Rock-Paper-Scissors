@@ -4,9 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./Rock-Paper-Scissors.js"></script>
+    <link rel="stylesheet" href="./style.css">
     <title>Rock-Paper-Scissors</title>
 </head>
 <body>
-    <script src="./Rock-Paper-Scissors.js"></script>
+    <header>Rock-Paper-Scissors</header>
+    <main>
+        <div class="rules">First to score 5 wins</div>
+        <div class="score">
+            <div class="player">
+                Player: <span class="playerScore">0</span>
+            </div>
+            <div class="computer">
+                Computer: <span class="computerScore">0</span>
+            </div>
+        </div>
+        <div class="container">
+            <div class="buttons">
+                <div class="buttons-player">
+                    <button id="player-rock" type="button"><img src="./images/rock-svgrepo-com.svg" alt="rock"></button>
+                    <button id="player-paper" type="button"><img src="./images/paper-svgrepo-com.svg" alt="paper"></button>
+                    <button id="player-scissors" type="button"><img src="./images/scissors-svgrepo-com.svg" alt="scissors"></button>
+                </div>
+                <div class="buttons-computer">
+                    <button id="computer-rock" type="button" disabled><img src="./images/rock-svgrepo-com.svg" alt="rock"></button>
+                    <button id="computer-paper" type="button" disabled><img src="./images/paper-svgrepo-com.svg" alt="paper"></button>
+                    <button id="computer-scissors" type="button" disabled><img src="./images/scissors-svgrepo-com.svg" alt="scissors"></button>
+                </div>
+            </div>
+            <div class="result"></div>
+            <button id="button-reset">Reset</button>
+        </div>
+    </main>
 </body>
 </html>
+
+<!--<div class="score">
+                Computer: <span class="computerScore">0</span> Player: <span class="playerScore">0</span>
+            </div>
+            <div class="buttons">
+                <button id="rock">Rock</button>
+                <button id="paper">Paper</button>
+                <button id="scissors">Scissors</button>
+            </div>
+            <div class="result"></div>-->
