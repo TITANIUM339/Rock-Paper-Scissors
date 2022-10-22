@@ -103,9 +103,12 @@ document.addEventListener("DOMContentLoaded", () => {
                         document.querySelector(".result").textContent = `You Lose! ${computerSelection} beats ${playerSelection}`;
                         computerScore++;
                         break;
-                
+                    
+                    // Update both.
                     default:
                         document.querySelector(".result").textContent = "Tie!";
+                        playerScore++;
+                        computerScore++;
                         break;
                 }
 
