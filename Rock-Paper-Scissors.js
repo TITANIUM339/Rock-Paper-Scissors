@@ -68,6 +68,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Continue game.
         game = true;
+        
+        return;
     });
 
     // Create event listeners for rock-paper-scissors buttons. 
@@ -104,11 +106,8 @@ document.addEventListener("DOMContentLoaded", () => {
                         computerScore++;
                         break;
                     
-                    // Update both.
                     default:
                         document.querySelector(".result").textContent = "Tie!";
-                        playerScore++;
-                        computerScore++;
                         break;
                 }
 
@@ -124,13 +123,8 @@ document.addEventListener("DOMContentLoaded", () => {
                         game = false;
                     }
                     // Computer won the game.
-                    else if (playerScore < computerScore) {
-                        document.querySelector(".result").textContent = "You Lost The Game!";
-                        // Stopping game
-                        game = false;
-                    }
                     else {
-                        document.querySelector(".result").textContent = "Draw!";
+                        document.querySelector(".result").textContent = "You Lost The Game!";
                         // Stopping game
                         game = false;
                     }
